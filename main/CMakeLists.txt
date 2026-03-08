@@ -1,0 +1,24 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "router_config.c"
+        "router_diag.c"
+        "router_storage.c"
+        "router_system.c"
+        "router_netif.c"
+        "router_nat.c"
+        "router_dns.c"
+        "router_portal.c"
+        "router_probe.c"
+        "router_wifi.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_event
+        esp_netif
+        esp_http_server
+        esp_http_client
+        esp_wifi
+        lwip
+        nvs_flash
+)

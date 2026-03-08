@@ -1,0 +1,87 @@
+menu "NAT Router Configuration"
+
+    comment "Required: enable LWIP IP forwarding and LWIP NAT in Component config -> LWIP"
+    comment "Recommended: increase Wi-Fi/LWIP dynamic memory and TCP/IP task stack for multi-client traffic"
+
+    config ROUTER_STA_SSID
+        string "Upstream STA SSID"
+        default ""
+
+    config ROUTER_STA_PASSWORD
+        string "Upstream STA password"
+        default ""
+
+    config ROUTER_STA_MAC
+        string "Upstream STA MAC override (empty keeps factory MAC)"
+        default ""
+
+    config ROUTER_STA_MAXIMUM_RETRY
+        int "Maximum auto reconnect retries before switching to slow retry"
+        range 1 1000
+        default 20
+
+    config ROUTER_AP_SSID
+        string "SoftAP SSID"
+        default "ESP_Bypass_Net"
+
+    config ROUTER_AP_PASSWORD
+        string "SoftAP password"
+        default "12345678"
+
+    config ROUTER_AP_CHANNEL
+        int "SoftAP channel"
+        range 1 13
+        default 6
+
+    config ROUTER_AP_MAX_CONNECTIONS
+        int "SoftAP max connections"
+        range 1 10
+        default 4
+
+    config ROUTER_AP_IP_ADDR
+        string "SoftAP IP address"
+        default "192.168.4.1"
+
+    config ROUTER_AP_GW_ADDR
+        string "SoftAP gateway address"
+        default "192.168.4.1"
+
+    config ROUTER_AP_NETMASK_ADDR
+        string "SoftAP netmask"
+        default "255.255.255.0"
+
+    config ROUTER_AP_DNS_FALLBACK
+        string "Fallback DNS served to AP clients"
+        default "8.8.8.8"
+
+    config ROUTER_PROBE_URL
+        string "HTTP connectivity probe URL"
+        default "http://neverssl.com/"
+
+    config ROUTER_PROBE_INTERVAL_MS
+        int "Connectivity probe interval in ms"
+        range 1000 60000
+        default 5000
+
+    config ROUTER_DIAG_INTERVAL_MS
+        int "Serial diagnostic print interval in ms"
+        range 1000 60000
+        default 5000
+
+    config ROUTER_VERBOSE_WIFI_LOG
+        bool "Enable verbose Wi-Fi logs"
+        default y
+
+    config ROUTER_VERBOSE_DNS_LOG
+        bool "Enable verbose DNS logs"
+        default n
+
+    config ROUTER_VERBOSE_PROBE_LOG
+        bool "Enable verbose probe logs"
+        default y
+
+    config ROUTER_VERBOSE_DIAG_LOG
+        bool "Enable periodic diagnostic logs"
+        default y
+
+endmenu

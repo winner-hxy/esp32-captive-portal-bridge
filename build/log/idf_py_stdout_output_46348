@@ -1,0 +1,69 @@
+[1/5] cmd.exe /C "cd /D "C:\Users\Gwynplaine\OneDrive - mails.ucas.ac.cn\ESP32\ESP32-C6-LCD-1.47-Test\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build/partition_table/partition-table.bin" "C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build/ESP32-C6-LCD-1.47-Test.bin""
+ESP32-C6-LCD-1.47-Test.bin binary size 0xcaaf0 bytes. Smallest app partition is 0x200000 bytes. 0x135510 bytes (60%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\Gwynplaine\OneDrive - mails.ucas.ac.cn\ESP32\ESP32-C6-LCD-1.47-Test\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build/bootloader/bootloader.bin""
+Bootloader binary size 0x54b0 bytes. 0x2b50 bytes (34%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py --chip esp32c6 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x10000 ESP32-C6-LCD-1.47-Test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM6
+Connecting...
+Chip is ESP32-C6FH4 (QFN32) (revision v0.2)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: 58:8c:81:ff:fe:59:ae:0c
+BASE MAC: 58:8c:81:59:ae:0c
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000dafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21680 bytes to 13065...
+Writing at 0x00000000... (100 %)
+Wrote 21680 bytes (13065 compressed) at 0x00000000 in 0.2 seconds (effective 830.1 kbit/s)...
+Hash of data verified.
+Compressed 830192 bytes to 488585...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cba5... (6 %)
+Writing at 0x00024beb... (10 %)
+Writing at 0x00029a3b... (13 %)
+Writing at 0x000327a0... (16 %)
+Writing at 0x00038f93... (20 %)
+Writing at 0x0003f9ba... (23 %)
+Writing at 0x00046d74... (26 %)
+Writing at 0x0004e60d... (30 %)
+Writing at 0x000555c4... (33 %)
+Writing at 0x0005c33e... (36 %)
+Writing at 0x000636f6... (40 %)
+Writing at 0x0006a873... (43 %)
+Writing at 0x0007139a... (46 %)
+Writing at 0x0007744a... (50 %)
+Writing at 0x0007daf0... (53 %)
+Writing at 0x00084682... (56 %)
+Writing at 0x0008a3f3... (60 %)
+Writing at 0x0009031e... (63 %)
+Writing at 0x000962fd... (66 %)
+Writing at 0x0009c75b... (70 %)
+Writing at 0x000a2707... (73 %)
+Writing at 0x000a895b... (76 %)
+Writing at 0x000ae99a... (80 %)
+Writing at 0x000b511c... (83 %)
+Writing at 0x000bb1a0... (86 %)
+Writing at 0x000c1744... (90 %)
+Writing at 0x000c78c6... (93 %)
+Writing at 0x000cdca3... (96 %)
+Writing at 0x000d3e0c... (100 %)
+Wrote 830192 bytes (488585 compressed) at 0x00010000 in 3.5 seconds (effective 1889.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 107...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (107 compressed) at 0x00008000 in 0.1 seconds (effective 234.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+esptool.py;--chip;esp32c6 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build" -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"

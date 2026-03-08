@@ -1,0 +1,764 @@
+I (4264) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x6e (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008ef0
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xe2c
+load:0x4086e610,len:0x2e20
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Mar  8 2026 16:34:06[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (72) boot:  2 flash_test       Unknown data     01 81 00210000 00084000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=420c0020 size=2ab5ch (174940) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0003ab84 vaddr=40800000 size=05494h ( 21652) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b75cch (751052) map[0m
+[0;32mI (290) esp_image: segment 3: paddr=000f75f4 vaddr=40805494 size=141b8h ( 82360) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (316) boot: Disabling RNG early entropy source...[0m
+[0;32mI (327) cpu_start: Unicore app[0m
+[0;33mW (336) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (342) cpu_start: Pro cpu start user code[0m
+[0;32mI (342) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (343) cpu_start: Application information:[0m
+[0;32mI (345) cpu_start: Project name:     ESP32-C6-LCD-1.47-Test[0m
+[0;32mI (352) cpu_start: App version:      1[0m
+[0;32mI (356) cpu_start: Compile time:     Mar  8 2026 16:33:46[0m
+[0;32mI (362) cpu_start: ELF file SHA256:  f3310d52c...[0m
+[0;32mI (367) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (373) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (377) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (382) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (387) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (394) heap_init: At 4081EBA0 len 0005DA70 (374 KiB): RAM[0m
+[0;32mI (400) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (406) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (414) spi_flash: detected chip: generic[0m
+[0;32mI (417) spi_flash: flash io: dio[0m
+[0;33mW (421) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (435) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (441) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (448) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (454) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (459) main_task: Started on CPU0[0m
+[0;32mI (459) main_task: Calling app_main()[0m
+[0;32mI (459) nat_router_main: Starting ESP32-C6 NAT router[0m
+[0;32mI (479) router_system: System init done[0m
+[0;32mI (479) router_storage: No saved config in NVS[0m
+[0;32mI (479) router_config: Probe URL normalized to http://neverssl.com/[0m
+[0;32mI (489) nat_router_main: Config: STA_SSID=211 STA_PASSWORD=88888888 AP_SSID=ESP_Bypass_Net AP_PASSWORD=12345678 PROBE_URL=http://neverssl.com/[0m
+[0;32mI (499) router_netif: SoftAP netif: ip=192.168.4.1 gw=192.168.4.1 mask=255.255.255.0[0m
+[0;32mI (509) router_netif: SoftAP DHCP DNS set to 8.8.8.8[0m
+[0;32mI (519) router_portal: Helper portal started at http://192.168.4.1/[0m
+[0;32mI (519) router_probe: Probe task started: interval=5000 url=http://neverssl.com/[0m
+[0;32mI (529) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (539) net80211: net80211 rom version: 5b8dcfa[0m
+I (549) wifi:wifi driver task: 4082b954, prio:23, stack:6656, core=0
+I (549) wifi:wifi firmware version: 3e0076f
+I (549) wifi:wifi certification version: v7.0
+I (549) wifi:config NVS flash: enabled
+I (559) wifi:config nano formating: disabled
+I (559) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N
+I (569) wifi:Init data frame dynamic rx buffer num: 32
+I (569) wifi:Init static rx mgmt buffer num: 5
+I (579) wifi:Init management short buffer num: 32
+I (579) wifi:Init dynamic tx buffer num: 32
+I (579) wifi:Init static tx FG buffer num: 2
+I (589) wifi:Init static rx buffer size: 1700
+I (589) wifi:Init static rx buffer num: 10
+I (599) wifi:Init dynamic rx buffer num: 32
+[0;32mI (599) wifi_init: rx ba win: 6[0m
+[0;32mI (599) wifi_init: tcpip mbox: 32[0m
+[0;32mI (609) wifi_init: udp mbox: 6[0m
+[0;32mI (609) wifi_init: tcp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp tx win: 5760[0m
+[0;32mI (619) wifi_init: tcp rx win: 5760[0m
+[0;32mI (619) wifi_init: tcp mss: 1440[0m
+[0;32mI (629) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (629) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (649) router_wifi: Wi-Fi init: AP SSID='ESP_Bypass_Net' channel=6 max_conn=4 STA SSID='211'[0m
+[0;32mI (649) phy_init: phy_version 290,81efd96,May  8 2024,10:42:13[0m
+W (709) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (709) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (719) wifi:(agc)0x600a7128:0xd2030a06, min.avgNF:0xce->0xd2(dB), RCalCount:0x2f, min.RRssi:0xa06(-95.62)
+W (729) wifi:(TB)WDEV_PWR_TB_MCS0:19
+W (729) wifi:(TB)WDEV_PWR_TB_MCS1:19
+W (739) wifi:(TB)WDEV_PWR_TB_MCS2:19
+W (739) wifi:(TB)WDEV_PWR_TB_MCS3:19
+W (739) wifi:(TB)WDEV_PWR_TB_MCS4:19
+W (749) wifi:(TB)WDEV_PWR_TB_MCS5:19
+W (749) wifi:(TB)WDEV_PWR_TB_MCS6:18
+W (749) wifi:(TB)WDEV_PWR_TB_MCS7:18
+W (759) wifi:(TB)WDEV_PWR_TB_MCS8:17
+W (759) wifi:(TB)WDEV_PWR_TB_MCS9:15
+W (759) wifi:(TB)WDEV_PWR_TB_MCS10:15
+W (759) wifi:(TB)WDEV_PWR_TB_MCS11:15
+I (769) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+
+I (779) wifi:mode : sta (58:8c:81:59:ae:0c) + softAP (58:8c:81:59:ae:0d)
+I (779) wifi:enable tsf
+I (789) wifi:Total power save buffer number: 16
+I (789) wifi:Init max length of beacon: 752/752
+I (789) wifi:Init max length of beacon: 752/752
+[0;32mI (799) router_wifi: STA start, connecting to 211[0m
+[0;32mI (799) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (809) router_diag: Diag task started, interval=5000ms[0m
+[0;32mI (819) router_diag: diag: stage=sta_connecting sta=no ip=no napt=off auth=no probe=pending dns=captive[0m
+[0;32mI (829) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (829) router_diag: STA IP: none[0m
+[0;32mI (839) router_diag: Upstream DNS: none[0m
+[0;32mI (839) nat_router_main: Router started. Connect phone to AP 'ESP_Bypass_Net'.[0m
+[0;32mI (849) nat_router_main: Helper portal: http://192.168.4.1/[0m
+[0;32mI (859) main_task: Returned from app_main()[0m
+I (3989) wifi:ap channel adjust o:6,1 n:1,1
+I (3989) wifi:new:<1,0>, old:<6,1>, ap:<1,1>, sta:<1,0>, prof:6
+I (3989) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x1
+I (3999) wifi:state: init -> auth (b0)
+I (4009) wifi:state: auth -> assoc (0)
+I (4019) wifi:state: assoc -> run (10)
+I (4019) wifi:(trc)phytype:CBW20-SGI, snr:26, maxRate:144, highestRateIdx:0
+I (4019) wifi:(trc)rate(L-MCS4, schedIdx:4), ampdu(rate:L-MCS4, schedIdx(4, stop:8)), snr:26, ampduState:wait operational
+I (4029) wifi:ifidx:0, rssi:-70, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:1440, he:0
+I (4029) wifi:max ampdu length exponent:3(65535 bytes), mmss:5(4 us)
+I (4119) wifi:connected with 211, aid = 1, channel 1, BW20, bssid = 08:47:c7:98:71:40
+I (4119) wifi:cipher(pairwise:0x3, group:0x1), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-70
+I (4129) wifi:pm start, type: 1, twt_start:0
+
+I (4129) wifi:pm start, type:1, aid:0x1, trans-BSSID:08:47:c7:98:71:40, BSSID[5]:0x40, mbssid(max-indicator:0, index:0), he:0
+I (4139) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4139) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+I (4149) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (4159) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+I (4169) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (4189) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4189) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+I (4199) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+I (4209) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+[0;32mI (4219) router_wifi: STA connected[0m
+W (4289) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1004071, TALO:0x98c74708, (ssn:3, win:64, cur_ssn:3), CONF:0xc0000005
+[0;32mI (5719) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5719) router_wifi: STA got IP: ip=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (5719) router_netif: Upstream DNS: 192.168.1.1[0m
+[0;32mI (5729) router_netif: SoftAP DHCP DNS switched to upstream 192.168.1.1[0m
+[0;32mI (5729) router_nat: NAPT enabled on 192.168.4.1[0m
+[0;32mI (5839) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (5839) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (5839) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (5849) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (10559) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (10849) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (10849) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (10849) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (10859) router_diag: Upstream DNS=192.168.1.1[0m
+I (14059) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<1,0>, prof:6
+I (14059) wifi:(trc)phytype:HT40-SGI, snr:60, maxRate:0, highestRateIdx:0
+I (14059) wifi:(trc)rate(S-MCS7, schedIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:60, ampduState:wait operational
+I (14069) wifi:ifidx:1, rssi:-35, nf:-95, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:0, he:0
+I (14079) wifi:max ampdu length exponent:3(65535 bytes), mmss:5(4 us)
+I (14089) wifi:station: 86:a9:fb:54:5c:ff join, AID=1, bgn, 40U
+[0;32mI (14149) router_wifi: AP client joined: MAC=86:a9:fb:54:5c:ff aid=1[0m
+W (14289) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101ff5c, TALO:0x54fba986, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005
+W (14289) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101ff5c, TALO:0x54fba986, (ssn:0, win:64, cur_ssn:0), CONF:0xc0007005
+I (14319) wifi:<ba-del>idx:4, tid:0
+[0;32mI (14409) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (14729) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:4, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (14809) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+[0;32mI (15569) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (15859) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (15859) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (15859) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (15869) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (15869) router_diag: AP clients=1[0m
+[0;32mI (15879) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+W (19619) wifi:<ba-add>idx:4, ifx:1, tid:5, TAHI:0x101ff5c, TALO:0x54fba986, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005
+[0;32mI (20609) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (20889) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (20889) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (20889) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (20899) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (20909) router_diag: AP clients=1[0m
+[0;32mI (20909) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (25619) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (25919) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (25919) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (25919) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (25929) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (25929) router_diag: AP clients=1[0m
+[0;32mI (25939) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-28[0m
+[0;32mI (30629) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (30949) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (30949) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (30949) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (30959) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (30959) router_diag: AP clients=1[0m
+[0;32mI (30969) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-33[0m
+[0;32mI (35679) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (35979) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (35979) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (35979) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (35989) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (35999) router_diag: AP clients=1[0m
+[0;32mI (35999) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-30[0m
+W (39219) wifi:<ba-add>idx:1, ifx:0, tid:6, TAHI:0x1004071, TALO:0x98c74708, (ssn:1, win:64, cur_ssn:1), CONF:0xc0006005
+[0;32mI (40699) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (41009) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (41009) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (41009) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (41019) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (41019) router_diag: AP clients=1[0m
+[0;32mI (41029) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (45709) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (46039) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (46039) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (46039) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (46049) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (46049) router_diag: AP clients=1[0m
+[0;32mI (46059) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-30[0m
+[0;32mI (50719) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (51069) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (51069) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (51069) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (51079) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (51079) router_diag: AP clients=1[0m
+[0;32mI (51089) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (55729) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (56099) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (56099) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (56099) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (56109) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (56109) router_diag: AP clients=1[0m
+[0;32mI (56119) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (60739) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (61129) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (61129) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (61129) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (61139) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (61139) router_diag: AP clients=1[0m
+[0;32mI (61149) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (65759) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (66159) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (66159) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (66159) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (66169) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (66169) router_diag: AP clients=1[0m
+[0;32mI (66179) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (70779) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (71189) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (71189) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (71189) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (71199) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (71199) router_diag: AP clients=1[0m
+[0;32mI (71209) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-28[0m
+[0;32mI (75799) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (76219) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (76219) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (76219) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (76229) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (76239) router_diag: AP clients=1[0m
+[0;32mI (76239) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (80819) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (81249) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (81249) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (81249) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (81259) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (81259) router_diag: AP clients=1[0m
+[0;32mI (81269) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-30[0m
+[0;32mI (85829) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (86279) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (86279) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (86279) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (86289) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (86289) router_diag: AP clients=1[0m
+[0;32mI (86299) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-30[0m
+[0;32mI (90839) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (91309) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (91309) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (91309) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (91319) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (91319) router_diag: AP clients=1[0m
+[0;32mI (91329) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-26[0m
+[0;32mI (95859) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (96339) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (96339) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (96339) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (96349) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (96349) router_diag: AP clients=1[0m
+[0;32mI (96359) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (100879) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (101369) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (101369) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (101369) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (101379) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (101389) router_diag: AP clients=1[0m
+[0;32mI (101389) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-27[0m
+[0;32mI (105889) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (106399) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (106399) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (106399) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (106409) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (106419) router_diag: AP clients=1[0m
+[0;32mI (106419) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-26[0m
+[0;32mI (110899) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (111429) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (111429) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (111429) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (111439) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (111449) router_diag: AP clients=1[0m
+[0;32mI (111449) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-30[0m
+[0;32mI (116459) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (116459) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (116459) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (116469) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (116479) router_diag: AP clients=1[0m
+[0;32mI (116479) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-26[0m
+[0;32mI (116919) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (121489) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (121489) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (121489) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (121499) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (121509) router_diag: AP clients=1[0m
+[0;32mI (121509) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-26[0m
+[0;32mI (121929) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (126519) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (126519) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (126519) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (126529) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (126539) router_diag: AP clients=1[0m
+[0;32mI (126539) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (126979) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (131549) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (131549) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (131549) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (131559) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (131569) router_diag: AP clients=1[0m
+[0;32mI (131569) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-28[0m
+[0;32mI (131989) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (136579) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (136579) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (136579) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (136589) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (136599) router_diag: AP clients=1[0m
+[0;32mI (136599) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-28[0m
+[0;32mI (136999) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (141609) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (141609) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (141609) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (141619) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (141629) router_diag: AP clients=1[0m
+[0;32mI (141629) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (142009) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (146639) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (146639) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (146639) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (146649) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (146659) router_diag: AP clients=1[0m
+[0;32mI (146659) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (148109) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (151669) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (151669) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (151669) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (151679) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (151689) router_diag: AP clients=1[0m
+[0;32mI (151689) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (153129) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (156699) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (156699) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (156699) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (156709) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (156719) router_diag: AP clients=1[0m
+[0;32mI (156719) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (158139) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (161729) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (161729) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (161729) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (161739) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (161749) router_diag: AP clients=1[0m
+[0;32mI (161749) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-32[0m
+[0;32mI (163149) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (166759) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (166759) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (166759) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (166769) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (166779) router_diag: AP clients=1[0m
+[0;32mI (166779) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-32[0m
+[0;32mI (168179) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (171789) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (171789) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (171789) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (171799) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (171809) router_diag: AP clients=1[0m
+[0;32mI (171809) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (173189) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (176819) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (176819) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (176819) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (176829) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (176839) router_diag: AP clients=1[0m
+[0;32mI (176839) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (178209) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (181849) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (181849) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (181849) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (181859) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (181869) router_diag: AP clients=1[0m
+[0;32mI (181869) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (183219) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (186879) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (186879) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (186879) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (186889) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (186899) router_diag: AP clients=1[0m
+[0;32mI (186899) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-30[0m
+[0;32mI (188239) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (191909) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (191909) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (191909) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (191919) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (191929) router_diag: AP clients=1[0m
+[0;32mI (191929) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (193249) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (196939) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (196939) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (196939) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (196949) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (196959) router_diag: AP clients=1[0m
+[0;32mI (196959) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (198269) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (201969) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (201969) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (201969) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (201979) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (201989) router_diag: AP clients=1[0m
+[0;32mI (201989) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (203279) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (206999) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (206999) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (206999) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (207009) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (207019) router_diag: AP clients=1[0m
+[0;32mI (207019) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-29[0m
+[0;32mI (208299) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (212029) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (212029) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (212029) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (212039) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (212049) router_diag: AP clients=1[0m
+[0;32mI (212049) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-28[0m
+[0;32mI (213309) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (217059) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (217059) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (217059) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (217069) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (217079) router_diag: AP clients=1[0m
+[0;32mI (217079) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-37[0m
+[0;32mI (218349) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+I (220059) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:5, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+W (220059) wifi:<ba-add>idx:2, ifx:0, tid:5, TAHI:0x1004071, TALO:0x98c74708, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005
+I (220069) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+[0;32mI (222089) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (222089) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (222089) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (222099) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (222109) router_diag: AP clients=1[0m
+[0;32mI (222109) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-35[0m
+[0;32mI (223359) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (227119) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (227119) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (227119) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (227129) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (227139) router_diag: AP clients=1[0m
+[0;32mI (227139) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-31[0m
+[0;32mI (230619) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (232149) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (232149) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (232149) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (232159) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (232169) router_diag: AP clients=1[0m
+[0;32mI (232169) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-34[0m
+W (234709) wifi:<ba-add>idx:6, ifx:1, tid:1, TAHI:0x101ff5c, TALO:0x54fba986, (ssn:0, win:64, cur_ssn:0), CONF:0xc0001005
+[0;32mI (237179) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (237179) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (237179) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (237189) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (237199) router_diag: AP clients=1[0m
+[0;32mI (237199) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-34[0m
+[0;32mI (239089) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (242209) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (242209) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (242209) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (242219) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (242229) router_diag: AP clients=1[0m
+[0;32mI (242229) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-34[0m
+[0;32mI (244229) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (247239) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (247239) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (247239) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (247249) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (247259) router_diag: AP clients=1[0m
+[0;32mI (247259) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-34[0m
+[0;32mI (250729) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (252269) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (252269) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (252269) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (252279) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (252289) router_diag: AP clients=1[0m
+[0;32mI (252289) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-30[0m
+[0;32mI (252859) router_wifi: AP client left: MAC=86:a9:fb:54:5c:ff aid=1[0m
+I (252899) wifi:starting SA query procedure with STA(86:a9:fb:54:5c:ff)
+I (252899) wifi:Send SA Query req with transaction id cc69
+I (253099) wifi:Send SA Query req with transaction id cc6a
+I (253299) wifi:Send SA Query req with transaction id cc6b
+I (253499) wifi:Send SA Query req with transaction id cc6c
+I (253699) wifi:Send SA Query req with transaction id cc6d
+I (253899) wifi:Send SA Query req with transaction id cc6e
+I (253919) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc
+I (253979) wifi:station: 86:a9:fb:54:5c:ff leave, AID = 1, bss_flags is 756835, bss:0x40821418
+I (253979) wifi:ifidx:1, rssi:-30, nf:-95, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:0, he:0
+I (253989) wifi:max ampdu length exponent:3(65535 bytes), mmss:5(4 us)
+I (253989) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:6
+I (253999) wifi:<ba-del>idx:6, tid:1
+I (253999) wifi:<ba-del>idx:4, tid:5
+I (254009) wifi:<ba-del>idx:5, tid:7
+[0;32mI (254009) router_wifi: AP client left: MAC=86:a9:fb:54:5c:ff aid=1[0m
+[0;32mI (255799) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (257299) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (257299) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (257299) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (257309) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (261189) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (262319) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (262319) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (262319) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (262329) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (266379) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (267339) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (267339) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (267339) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (267349) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (271459) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (272359) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (272359) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (272359) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (272369) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (276789) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (277379) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (277379) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (277379) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (277389) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (282079) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (282399) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (282399) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (282399) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (282409) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (287129) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (287419) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (287419) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (287419) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (287429) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (292209) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (292439) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (292439) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (292439) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (292449) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (297259) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (297459) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (297459) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (297459) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (297469) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (302279) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (302479) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (302479) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (302479) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (302489) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (307299) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (307499) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (307499) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (307499) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (307509) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (312309) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (312519) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (312519) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (312519) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (312529) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (317339) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (317539) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (317539) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (317539) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (317549) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (322349) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (322559) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (322559) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (322559) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (322569) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (327359) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (327579) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (327579) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (327579) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (327589) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (332369) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (332599) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (332599) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (332599) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (332609) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (337379) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (337619) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (337619) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (337619) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (337629) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (342409) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (342639) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (342639) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (342639) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (342649) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (347419) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (347659) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (347659) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (347659) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (347669) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (352429) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (352679) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (352679) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (352679) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (352689) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (357449) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (357699) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (357699) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (357699) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (357709) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (362459) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (362719) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (362719) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (362719) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (362729) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (367479) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (367739) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (367739) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (367739) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (367749) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (372499) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (372759) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (372759) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (372759) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (372769) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (377519) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (377779) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (377779) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (377779) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (377789) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (382529) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (382799) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (382799) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (382799) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (382809) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (387539) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (387819) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (387819) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (387819) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (387829) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (392549) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (392839) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (392839) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (392839) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (392849) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (397619) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (397859) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (397859) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (397859) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (397869) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (402839) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (402879) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (402879) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (402879) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (402889) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (407879) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (407899) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (407899) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (407899) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (407909) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (412919) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (412919) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (412919) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (412929) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (413079) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (417939) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (417939) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (417939) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (417949) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (418099) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (422959) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (422959) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (422959) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (422969) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (423129) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (427979) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (427979) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (427979) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (427989) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (428149) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (432999) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (432999) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (432999) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (433009) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (433189) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (438019) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (438019) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (438019) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (438029) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (438269) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (443039) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (443039) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (443039) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (443049) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (443299) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (448059) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (448059) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (448059) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (448069) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (448309) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (453079) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (453079) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (453079) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (453089) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (453359) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (458099) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (458099) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (458099) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (458109) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (458449) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (463119) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (463119) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (463119) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (463129) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (463469) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (468139) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (468139) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (468139) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (468149) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (468569) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (473159) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (473159) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (473159) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (473169) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (473579) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (478179) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (478179) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (478179) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (478189) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (478599) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m
+[0;32mI (483199) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (483199) router_diag: diag: probe_status=302 redirect=yes sta_ssid=211[0m
+[0;32mI (483199) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (483209) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (483609) router_probe: Probe result: url=http://neverssl.com/ status=302 redirect=true[0m

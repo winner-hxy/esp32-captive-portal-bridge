@@ -1,0 +1,76 @@
+[1/5] cmd.exe /C "cd /D "C:\Users\Gwynplaine\OneDrive - mails.ucas.ac.cn\ESP32\ESP32-C6-LCD-1.47-Test\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build/partition_table/partition-table.bin" "C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build/ESP32-C6-LCD-1.47-Test.bin""
+ESP32-C6-LCD-1.47-Test.bin binary size 0xfbdf0 bytes. Smallest app partition is 0x200000 bytes. 0x104210 bytes (51%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\Gwynplaine\OneDrive - mails.ucas.ac.cn\ESP32\ESP32-C6-LCD-1.47-Test\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build/bootloader/bootloader.bin""
+Bootloader binary size 0x54b0 bytes. 0x2b50 bytes (34%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py --chip esp32c6 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x10000 ESP32-C6-LCD-1.47-Test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM6
+Connecting...
+Chip is ESP32-C6FH4 (QFN32) (revision v0.2)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: 58:8c:81:ff:fe:59:ae:0c
+BASE MAC: 58:8c:81:59:ae:0c
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0010bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21680 bytes to 13065...
+Writing at 0x00000000... (100 %)
+Wrote 21680 bytes (13065 compressed) at 0x00000000 in 0.2 seconds (effective 827.8 kbit/s)...
+Hash of data verified.
+Compressed 1031664 bytes to 595818...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001cdde... (5 %)
+Writing at 0x0002906d... (8 %)
+Writing at 0x0002e58a... (10 %)
+Writing at 0x000345b8... (13 %)
+Writing at 0x0003d7ba... (16 %)
+Writing at 0x0004406e... (18 %)
+Writing at 0x0004bc5d... (21 %)
+Writing at 0x000534e8... (24 %)
+Writing at 0x00059f7c... (27 %)
+Writing at 0x00060e59... (29 %)
+Writing at 0x00067ffe... (32 %)
+Writing at 0x0006f0cf... (35 %)
+Writing at 0x000760f3... (37 %)
+Writing at 0x0007d193... (40 %)
+Writing at 0x0008333b... (43 %)
+Writing at 0x0008999d... (45 %)
+Writing at 0x00090720... (48 %)
+Writing at 0x00096bae... (51 %)
+Writing at 0x0009c6a1... (54 %)
+Writing at 0x000a289a... (56 %)
+Writing at 0x000a892c... (59 %)
+Writing at 0x000aeaf4... (62 %)
+Writing at 0x000b4cec... (64 %)
+Writing at 0x000baa45... (67 %)
+Writing at 0x000c1498... (70 %)
+Writing at 0x000c765c... (72 %)
+Writing at 0x000cd8f7... (75 %)
+Writing at 0x000d454e... (78 %)
+Writing at 0x000db1cf... (81 %)
+Writing at 0x000e1ac1... (83 %)
+Writing at 0x000e83ed... (86 %)
+Writing at 0x000ee2ad... (89 %)
+Writing at 0x000f47d6... (91 %)
+Writing at 0x000fb8e4... (94 %)
+Writing at 0x00101d7a... (97 %)
+Writing at 0x00107dcd... (100 %)
+Wrote 1031664 bytes (595818 compressed) at 0x00010000 in 4.4 seconds (effective 1881.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 107...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (107 compressed) at 0x00008000 in 0.1 seconds (effective 237.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+esptool.py;--chip;esp32c6 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/Gwynplaine/OneDrive - mails.ucas.ac.cn/ESP32/ESP32-C6-LCD-1.47-Test/build" -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"

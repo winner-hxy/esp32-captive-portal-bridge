@@ -1,0 +1,287 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x6f (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4080551a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xe2c
+load:0x4086e610,len:0x2e20
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Mar  8 2026 16:34:06[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (72) boot:  2 flash_test       Unknown data     01 81 00210000 00084000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=420c0020 size=2b004h (176132) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0003b02c vaddr=40800000 size=04fech ( 20460) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b8120h (753952) map[0m
+[0;32mI (290) esp_image: segment 3: paddr=000f8148 vaddr=40804fec size=14660h ( 83552) load[0m
+[0;32mI (316) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (316) boot: Disabling RNG early entropy source...[0m
+[0;32mI (328) cpu_start: Unicore app[0m
+[0;33mW (336) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (343) cpu_start: Pro cpu start user code[0m
+[0;32mI (343) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (344) cpu_start: Application information:[0m
+[0;32mI (346) cpu_start: Project name:     ESP32-C6-LCD-1.47-Test[0m
+[0;32mI (352) cpu_start: App version:      1[0m
+[0;32mI (357) cpu_start: Compile time:     Mar  8 2026 16:33:46[0m
+[0;32mI (363) cpu_start: ELF file SHA256:  9eadfe9ce...[0m
+[0;32mI (368) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (374) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (378) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (383) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (388) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (395) heap_init: At 4081EBB0 len 0005DA60 (374 KiB): RAM[0m
+[0;32mI (401) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (407) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (414) spi_flash: detected chip: generic[0m
+[0;32mI (418) spi_flash: flash io: dio[0m
+[0;33mW (422) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (436) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (442) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (449) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (455) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (460) main_task: Started on CPU0[0m
+[0;32mI (460) main_task: Calling app_main()[0m
+[0;32mI (460) nat_router_main: Starting ESP32-C6 NAT router[0m
+[0;32mI (470) nat_router_main: FW_REV=nat-full-rollback-20260308-01 BUILD=Mar  8 2026 17:38:23[0m
+[0;32mI (490) router_system: System init done[0m
+[0;32mI (490) router_storage: No saved config in NVS[0m
+[0;32mI (490) router_config: Probe URL normalized to http://neverssl.com/[0m
+[0;32mI (500) nat_router_main: Config: STA_SSID=211 STA_PASSWORD=88888888 STA_MAC=(factory) AP_SSID=ESP_Bypass_Net AP_PASSWORD=12345678 PROBE_URL=http://neverssl.com/[0m
+[0;32mI (510) router_netif: SoftAP netif: ip=192.168.4.1 gw=192.168.4.1 mask=255.255.255.0[0m
+[0;32mI (520) router_netif: SoftAP DHCP DNS set to 192.168.4.1[0m
+[0;32mI (530) router_dns: Local DNS started on UDP/53[0m
+[0;32mI (530) router_portal: Helper portal started at http://192.168.4.1/[0m
+[0;32mI (540) router_probe: Probe task started: interval=5000 url=http://neverssl.com/[0m
+[0;32mI (550) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (550) net80211: net80211 rom version: 5b8dcfa[0m
+I (570) wifi:wifi driver task: 4082d450, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: 3e0076f
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (590) wifi:Init static rx mgmt buffer num: 5
+I (590) wifi:Init management short buffer num: 32
+I (600) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static tx FG buffer num: 2
+I (600) wifi:Init static rx buffer size: 1700
+I (610) wifi:Init static rx buffer num: 10
+I (610) wifi:Init dynamic rx buffer num: 32
+[0;32mI (620) wifi_init: rx ba win: 6[0m
+[0;32mI (620) wifi_init: tcpip mbox: 32[0m
+[0;32mI (620) wifi_init: udp mbox: 6[0m
+[0;32mI (630) wifi_init: tcp mbox: 6[0m
+[0;32mI (630) wifi_init: tcp tx win: 5760[0m
+[0;32mI (640) wifi_init: tcp rx win: 5760[0m
+[0;32mI (640) wifi_init: tcp mss: 1440[0m
+[0;32mI (640) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (650) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (650) router_wifi: STA MAC: factory default[0m
+[0;32mI (660) router_wifi: Wi-Fi init: AP SSID='ESP_Bypass_Net' channel=6 max_conn=4 STA SSID='211'[0m
+[0;32mI (670) phy_init: phy_version 290,81efd96,May  8 2024,10:42:13[0m
+W (730) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (730) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (740) wifi:(agc)0x600a7128:0xd2051a90, min.avgNF:0xce->0xd2(dB), RCalCount:0x51, min.RRssi:0xa90(-87.00)
+W (750) wifi:(TB)WDEV_PWR_TB_MCS0:19
+W (750) wifi:(TB)WDEV_PWR_TB_MCS1:19
+W (750) wifi:(TB)WDEV_PWR_TB_MCS2:19
+W (760) wifi:(TB)WDEV_PWR_TB_MCS3:19
+W (760) wifi:(TB)WDEV_PWR_TB_MCS4:19
+W (760) wifi:(TB)WDEV_PWR_TB_MCS5:19
+W (770) wifi:(TB)WDEV_PWR_TB_MCS6:18
+W (770) wifi:(TB)WDEV_PWR_TB_MCS7:18
+W (770) wifi:(TB)WDEV_PWR_TB_MCS8:17
+W (780) wifi:(TB)WDEV_PWR_TB_MCS9:15
+W (780) wifi:(TB)WDEV_PWR_TB_MCS10:15
+W (780) wifi:(TB)WDEV_PWR_TB_MCS11:15
+I (790) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+
+I (790) wifi:mode : sta (58:8c:81:59:ae:0c) + softAP (58:8c:81:59:ae:0d)
+I (800) wifi:enable tsf
+I (800) wifi:Total power save buffer number: 16
+I (800) wifi:Init max length of beacon: 752/752
+I (810) wifi:Init max length of beacon: 752/752
+[0;32mI (810) router_wifi: STA start, connecting to 211[0m
+[0;32mI (820) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (830) router_diag: Diag task started, interval=5000ms[0m
+[0;32mI (830) router_diag: diag: stage=sta_connecting sta=no ip=no napt=off auth=no probe=pending dns=fallback[0m
+[0;32mI (840) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (850) router_diag: STA IP: none[0m
+[0;32mI (850) router_diag: Upstream DNS: none[0m
+[0;32mI (860) nat_router_main: Router started. Connect phone to AP 'ESP_Bypass_Net'.[0m
+[0;32mI (870) nat_router_main: Helper portal: http://192.168.4.1/[0m
+[0;32mI (870) main_task: Returned from app_main()[0m
+[0;33mW (3650) router_wifi: STA disconnected, retry (1/20)[0m
+[0;32mI (5860) router_diag: diag: stage=sta_connecting sta=no ip=no napt=off auth=no probe=pending dns=fallback[0m
+[0;32mI (5860) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (5860) router_diag: STA IP: none[0m
+[0;32mI (5870) router_diag: Upstream DNS: none[0m
+[0;33mW (5870) router_diag: diag: last_error=STA disconnected, retry (1/20)[0m
+[0;32mI (5880) router_diag: diag: counters sta_disc=1 nat_on=0 nat_off=0 dns_fail=0 probe_fail=0 dns_up=0 dns_local=0 last_dns=none[0m
+[0;33mW (6470) router_wifi: STA disconnected, retry (2/20)[0m
+I (9660) wifi:new:<6,1>, old:<6,1>, ap:<6,1>, sta:<6,0>, prof:6
+I (9660) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x1
+I (9660) wifi:state: init -> auth (b0)
+I (9670) wifi:state: auth -> assoc (0)
+I (9700) wifi:state: assoc -> run (10)
+I (9700) wifi:(trc)phytype:CBW20-SGI, snr:26, maxRate:144, highestRateIdx:0
+I (9700) wifi:(trc)rate(L-MCS4, schedIdx:4), ampdu(rate:L-MCS4, schedIdx(4, stop:8)), snr:26, ampduState:wait operational
+I (9710) wifi:ifidx:0, rssi:-62, nf:-88, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:1440, he:0
+I (9720) wifi:max ampdu length exponent:3(65535 bytes), mmss:5(4 us)
+W (9790) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (9790) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (9790) wifi:[ADDBA]rx delba, code:39, delete tid:4
+W (9790) wifi:[ADDBA]rx delba, code:39, delete tid:5
+W (9790) wifi:[ADDBA]rx delba, code:39, delete tid:6
+W (9800) wifi:[ADDBA]rx delba, code:39, delete tid:7
+I (9810) wifi:connected with 211, aid = 1, channel 6, BW20, bssid = 08:47:c7:98:71:40
+I (9810) wifi:cipher(pairwise:0x3, group:0x1), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-62
+I (9830) wifi:pm start, type: 1, twt_start:0
+
+I (9830) wifi:pm start, type:1, aid:0x1, trans-BSSID:08:47:c7:98:71:40, BSSID[5]:0x40, mbssid(max-indicator:0, index:0), he:0
+I (9830) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (9840) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+I (9850) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (9860) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+I (9870) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (9880) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (9890) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+I (9900) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+I (9910) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+[0;32mI (9920) router_wifi: STA connected[0m
+W (10000) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1004071, TALO:0x98c74708, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+[0;32mI (10890) router_diag: diag: stage=sta_connected_no_ip sta=yes ip=no napt=off auth=no probe=pending dns=fallback[0m
+[0;32mI (10890) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (10890) router_diag: STA IP: none[0m
+[0;32mI (10900) router_diag: Upstream DNS: none[0m
+[0;32mI (10900) router_diag: diag: counters sta_disc=2 nat_on=0 nat_off=0 dns_fail=0 probe_fail=0 dns_up=0 dns_local=0 last_dns=none[0m
+[0;32mI (10920) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10920) router_wifi: STA got IP: ip=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (10930) router_netif: Upstream DNS: 192.168.1.1[0m
+[0;32mI (10940) router_netif: SoftAP DHCP DNS switched to upstream 192.168.1.1[0m
+[0;32mI (10940) router_nat: NAPT enabled on 192.168.4.1[0m
+[0;32mI (15910) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (15910) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (15910) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (15920) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (15920) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=0 dns_up=0 dns_local=0 last_dns=none[0m
+[0;33mW (19580) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (19580) router_probe: Probe request failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (20940) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (20940) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (20940) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (20950) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (20950) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=1 dns_up=0 dns_local=0 last_dns=none[0m
+I (24230) wifi:new:<6,1>, old:<6,1>, ap:<6,1>, sta:<6,0>, prof:6
+I (24230) wifi:(trc)phytype:HT40-SGI, snr:66, maxRate:0, highestRateIdx:0
+I (24230) wifi:(trc)rate(S-MCS7, schedIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational
+I (24240) wifi:ifidx:1, rssi:-22, nf:-88, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:0, he:0
+I (24250) wifi:max ampdu length exponent:3(65535 bytes), mmss:5(4 us)
+I (24250) wifi:station: 86:a9:fb:54:5c:ff join, AID=1, bgn, 40U
+[0;32mI (24310) router_wifi: AP client joined: MAC=86:a9:fb:54:5c:ff aid=1[0m
+W (24370) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101ff5c, TALO:0x54fba986, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005
+W (24370) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101ff5c, TALO:0x54fba986, (ssn:0, win:64, cur_ssn:0), CONF:0xc0007005
+[0;32mI (24450) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (24470) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:4, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (24490) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+[0;32mI (25970) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (25970) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (25970) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (25980) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (25980) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=1 dns_up=2 dns_local=0 last_dns=upstream[0m
+[0;32mI (26000) router_diag: AP clients=1[0m
+[0;32mI (26000) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-18[0m
+[0;33mW (28590) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (28590) router_probe: Probe request failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (31010) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (31010) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (31010) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (31020) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (31020) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=2 dns_up=5 dns_local=0 last_dns=upstream[0m
+[0;32mI (31040) router_diag: AP clients=1[0m
+[0;32mI (31040) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-18[0m
+W (35190) wifi:<ba-add>idx:1, ifx:0, tid:6, TAHI:0x1004071, TALO:0x98c74708, (ssn:1, win:64, cur_ssn:1), CONF:0xc0006005
+W (35200) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101ff5c, TALO:0x54fba986, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005
+[0;32mI (36050) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (36050) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (36050) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (36060) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (36060) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=2 dns_up=12 dns_local=0 last_dns=upstream[0m
+[0;32mI (36080) router_diag: AP clients=1[0m
+[0;32mI (36080) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-19[0m
+[0;33mW (37610) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (37610) router_probe: Probe request failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (41090) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (41090) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (41090) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (41100) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (41100) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=3 dns_up=19 dns_local=0 last_dns=upstream[0m
+[0;32mI (41120) router_diag: AP clients=1[0m
+[0;32mI (41120) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-22[0m
+[0;32mI (46130) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (46130) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (46130) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (46140) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (46140) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=3 dns_up=33 dns_local=0 last_dns=upstream[0m
+[0;32mI (46160) router_diag: AP clients=1[0m
+[0;32mI (46160) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-25[0m
+[0;33mW (49320) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (49320) router_probe: Probe request failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (51170) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (51170) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (51170) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (51180) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (51180) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=4 dns_up=35 dns_local=0 last_dns=upstream[0m
+[0;32mI (51200) router_diag: AP clients=1[0m
+[0;32mI (51200) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-26[0m
+[0;33mW (51850) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (51850) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;33mW (51980) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (51980) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (54140) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (54140) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;32mI (56210) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (56210) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (56210) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (56220) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (56230) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=4 dns_up=40 dns_local=0 last_dns=upstream[0m
+[0;32mI (56240) router_diag: AP clients=1[0m
+[0;32mI (56240) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-20[0m
+[0;33mW (58380) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (58380) router_probe: Probe request failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (61250) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (61250) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (61250) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (61260) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (61260) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=5 dns_up=43 dns_local=0 last_dns=upstream[0m
+[0;32mI (61280) router_diag: AP clients=1[0m
+[0;32mI (61280) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-43[0m
+[0;32mI (66290) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (66290) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (66290) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (66300) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (66300) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=5 dns_up=44 dns_local=0 last_dns=upstream[0m
+[0;32mI (66320) router_diag: AP clients=1[0m
+[0;32mI (66320) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-41[0m
+[0;33mW (67390) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (67390) router_probe: Probe request failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (71330) router_diag: diag: stage=auth_required sta=yes ip=yes napt=on auth=yes probe=pending dns=upstream[0m
+[0;32mI (71330) router_diag: diag: probe_status=-1 redirect=no sta_ssid=211[0m
+[0;32mI (71330) router_diag: STA IP=192.168.1.12 mask=255.255.255.0 gw=192.168.1.1[0m
+[0;32mI (71340) router_diag: Upstream DNS=192.168.1.1[0m
+[0;32mI (71340) router_diag: diag: counters sta_disc=2 nat_on=1 nat_off=0 dns_fail=0 probe_fail=6 dns_up=44 dns_local=0 last_dns=upstream[0m
+[0;32mI (71360) router_diag: AP clients=1[0m
+[0;32mI (71360) router_diag: Client[0] MAC=86:a9:fb:54:5c:ff RSSI=-40[0m
